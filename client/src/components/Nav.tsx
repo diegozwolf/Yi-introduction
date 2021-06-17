@@ -8,7 +8,7 @@ interface Props {
   navArgs: Parameters<ReturnType<typeof useNavigation>["navigate"]>[0];
 }
 
-const NavButton: React.FC<Props> = ({ navArgs, children }) => {
+const NavButton: React.FC<any> = ({ navArgs, children }) => {
   const { navigate, activeRoute } = useNavigation();
   const isActive = activeRoute.route === navArgs.route;
   const background = isActive ? "#375782" : undefined;
@@ -52,7 +52,7 @@ export const Nav: React.FC = () => {
               Home
             </NavButton>
           )}
-          <NavButton navArgs={{ route: "DownloadsScreen", params: {} }}>
+          <NavButton navArgs={{ route: "DownloadsScreen" }}>
             Downloads
           </NavButton>
         </CenterContents>

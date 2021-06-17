@@ -24,9 +24,9 @@ export const OfflineButton: React.FC = () => {
     const newIsOffline = !isOffline;
     setIsOffline(newIsOffline);
     if (newIsOffline) {
-      navigate({ route: "DownloadsScreen", params: {} });
+      navigate({ route: "DownloadsScreen", params: { id:''} });
     } else {
-      navigate({ route: "HomeScreen", params: {} });
+      navigate({ route: "HomeScreen", params: {id:''} });
     }
   };
 
