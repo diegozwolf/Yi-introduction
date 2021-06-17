@@ -4,6 +4,7 @@ import { Loading, ErrorMessage } from "../../components";
 import { homeScreenQuery, HomeScreenQuery } from "../../graphql";
 import { HomeScreenCard } from "./HomeScreenCard";
 
+
 export const HomeScreen: React.FC = () => {
   const { data, error, loading } = useQuery<HomeScreenQuery>(homeScreenQuery);
 

@@ -7,10 +7,8 @@ import {
   MeditationScreenQueryVariables
 } from "../graphql";
 import { ErrorMessage, Loading, CenterContents } from "../components";
+import {Props} from  "./../types";
 
-interface Props {
-  id: string;
-}
 
 export const MeditationScreen: React.FC<Props> = ({ id }) => {
   const { data, error, loading } = useQuery<

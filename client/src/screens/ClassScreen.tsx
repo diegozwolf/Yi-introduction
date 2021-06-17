@@ -7,10 +7,8 @@ import {
   ClassScreenQueryVariables
 } from "../graphql";
 import { ErrorMessage, Loading, CenterContents } from "../components";
+import { Props } from "../types";
 
-interface Props {
-  id: string;
-}
 
 export const ClassScreen: React.FC<Props> = ({ id }) => {
   const { data, error, loading } = useQuery<

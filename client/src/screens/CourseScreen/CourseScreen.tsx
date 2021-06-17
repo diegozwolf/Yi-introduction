@@ -8,10 +8,8 @@ import {
 } from "../../graphql";
 import { ChapterList } from "./ChapterList";
 import { ErrorMessage, Loading, CenterContents } from "../../components";
+import {Props} from  "./../../types";
 
-interface Props {
-  id: string;
-}
 
 export const CourseScreen: React.FC<Props> = ({ id }) => {
   const { data, error, loading } = useQuery<
